@@ -1,4 +1,4 @@
-# AI Kill Switch SDK
+# AI Kill Switch
 
 **The easiest way to add a kill switch to your AI service.**
 
@@ -15,9 +15,6 @@ A comprehensive Python SDK for implementing AI safety mechanisms, real-time moni
 
 See [docs/phylosophy/](docs/phylosophy/) for detailed vision and user experience goal documentation.
 
-
-
-
 ## Installation
 
 Install the package from PyPI:
@@ -25,8 +22,6 @@ Install the package from PyPI:
 ```bash
 pip install ai-kill-switch
 ```
-
-
 
 ## Features
 
@@ -43,8 +38,6 @@ pip install ai-kill-switch
 - **Kill Switch Server**: A control plane for collecting data, applying safety logic, and executing actions
 - **Safety Logic & Actions**: Extensible building blocks to detect risks and define responses
 - **Dashboard & API**: Interfaces for real-time monitoring, safety management, and manual control
-
-
 
 ## License
 
