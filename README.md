@@ -1,6 +1,22 @@
 # AI Kill Switch SDK
 
-A Python SDK for implementing AI safety mechanisms and kill switches.
+**The easiest way to add a kill switch to your AI service.**
+
+A comprehensive Python SDK for implementing AI safety mechanisms, real-time monitoring, and kill switches. AI Kill Switch provides essential components out of the box, so developers can focus on building great AI features with confidence while ensuring users feel safe and trust the AI they rely on.
+
+## Vision & Goals
+
+**Our Vision**: To make it standard practice for every AI service to have its own kill switch. AI Kill Switch aims to become the default safety backbone for modern AI systems.
+
+**User Experience Goals**:
+- **Developers**: Stay focused on building great AI features with minimal integration effort
+- **Operators**: Gain simple, powerful tools to keep AI safe and under control  
+- **AI Service Users**: Feel confident knowing the AI they interact with is safe and trustworthy
+
+See [docs/phylosophy/](docs/phylosophy/) for detailed vision and user experience goal documentation.
+
+
+
 
 ## Installation
 
@@ -10,115 +26,25 @@ Install the package from PyPI:
 pip install ai-kill-switch
 ```
 
-Or install from source:
 
-```bash
-git clone https://github.com/ai-kill-switch/ai-kill-switch.git
-cd ai-kill-switch
-pip install -e .
-```
-
-## Quick Start
-
-```python
-from ai_kill_switch import hello
-
-# Use the hello function
-message = hello()
-print(message)  # Output: Hello from AI Kill Switch!
-```
 
 ## Features
 
-- **Simple Interface**: Easy-to-use hello function
-- **Lightweight**: Minimal dependencies and overhead
-- **Well-tested**: Comprehensive test coverage
+- **Minimal Integration**: A few lines are enough to integrate
+- **Out of the Box**: Essential components provided, ready to use
+- **Real-time Monitoring**: Automatic observation and event collection
+- **Extensible Safety Logic**: Domain-specific safety rules can be added easily
+- **Manual Control**: Real-time monitoring, safety management, and manual kill switch
+- **Open Source**: Fully transparent and developer-friendly
 
-## Usage
+## Components
 
-```python
-from ai_kill_switch import hello
+- **Kill Switch SDK**: A client library for observing AI behavior and sending events
+- **Kill Switch Server**: A control plane for collecting data, applying safety logic, and executing actions
+- **Safety Logic & Actions**: Extensible building blocks to detect risks and define responses
+- **Dashboard & API**: Interfaces for real-time monitoring, safety management, and manual control
 
-# Get the greeting message
-message = hello()
-print(message)
 
-# Use in your own functions
-def greet_user():
-    return f"Welcome! {hello()}"
-```
-
-## Development
-
-### Setup Development Environment
-
-```bash
-# Clone the repository
-git clone https://github.com/ai-kill-switch/ai-kill-switch.git
-cd ai-kill-switch
-
-# Install development dependencies
-pip install -r requirements.txt
-
-# Install package in development mode
-pip install -e .
-```
-
-### Running Tests
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=ai_kill_switch
-
-# Run specific test file
-pytest tests/test_core.py
-```
-
-### Code Quality
-
-```bash
-# Format code
-black ai_kill_switch tests
-
-# Lint code
-flake8 ai_kill_switch tests
-
-# Type checking
-mypy ai_kill_switch
-```
-
-## Building and Publishing
-
-### Build Package
-
-```bash
-# Build source distribution and wheel
-python -m build
-
-# Check package
-twine check dist/*
-```
-
-### Upload to PyPI
-
-```bash
-# Upload to Test PyPI first
-twine upload --repository testpypi dist/*
-
-# Upload to PyPI
-twine upload dist/*
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
@@ -127,12 +53,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/ai-kill-switch/ai-kill-switch/issues)
-- **Documentation**: [Documentation](https://ai-kill-switch.github.io)
+- **Documentation**: [Homepage](https://ai-kill-switch.github.io)
+- **Discord**: [Join our Discord](https://discord.gg/Pu3aKmEP)
 - **Email**: ai.kill.switch.contact@gmail.com
 
-## Changelog
+## Most Recent Changes
 
-### 0.0.1 (Unreleased)
-- Initial release
-- Simple hello function
-- Comprehensive test coverage
+### 0.0.1 - 2025-09-01 (pre-release)
+- Initial project setup
+- No implementation yet
+
+See [CHANGELOG.md](CHANGELOG.md) for full history.
